@@ -1,8 +1,9 @@
 import os
+from box.exceptions import BoxValueError
 import yaml
+from src.mlProject import logger
 import json
 import joblib
-from box.exceptions import BoxValueError
 from ensure import ensure_annotations
 from box import ConfigBox
 from pathlib import Path
@@ -49,7 +50,6 @@ def create_directories(path_to_directories: list, verbose=True):
         os.makedirs(path, exist_ok=True)
         if verbose:
             logger.info(f"created directory at: {path}")
-
 
 
 # Save - Files
@@ -115,7 +115,6 @@ def load_bin(path: Path) -> Any:
     data = joblib.load(path)
     logger.info(f"binary file loaded from: {path}")
     return data
-
 
 
 # Get - File size
