@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from pathlib import Path
 
-
+# Data Ingestion Entity
 @dataclass(frozen=True)
 class DataIngestionConfig:
     root_dir: Path
