@@ -22,6 +22,14 @@ make setup in setup.py
 pip install -r requirements.txt
 ```
 
+```bash
+python app.py
+```
+
+```bash
+Now open your local host 0.0.0.0:7070 
+```
+
 ### Project work flow
 
 1. update config.yaml
